@@ -3,6 +3,13 @@ main = "_worker.js"
 compatibility_date = "2025-11-04"
 keep_vars = true
 
-#[[kv_namespaces]]
-#binding = "KV"			#KV绑定名默认不可修改
-#id = ""				#KV数据库id
+# KV binding name must stay KV (set in Cloudflare dashboard).
+# [[kv_namespaces]]
+# binding = "KV"
+# id = ""
+
+# Set these in Cloudflare Pages → Settings → Environment variables (Production):
+# ADMIN       = panel password
+# UUID        = 3be0e28f-fbd0-41c4-935b-48cfac7cf724
+# GO2SOCKS5   = *
+# DMIT_SOCKS  = socks5://USER:PASS@45.59.186.107:10808
